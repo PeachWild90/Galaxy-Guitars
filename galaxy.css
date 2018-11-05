@@ -1,0 +1,256 @@
+/*Common elements*/
+body {
+    font-size: 75.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: black url(img/cosmos-dust-galaxy-262781.jpg) no-repeat fixed top center;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+h1{
+    color: #38C9FE;
+    font-size: 2.2em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 5px;
+}
+
+h2{ /*guitar names */
+    color: #F420E6;
+    font-size: 1.76em;
+    margin: .5em 0 0.35em 0;
+    padding: 0px;
+}
+p{
+    color: whitesmoke;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+ol { 
+    font-size: 25px;
+    padding: 1px 1px 1px 6px;
+    margin: 0 0 0 6px;
+    color: black; /*numbers next to guitar gods */
+    text-shadow: 1px 2px 0 hsl(180, 98%, 53%);
+}
+
+ol li{
+    margin: 0;
+    padding: .2em .1em 0.2em;
+}
+
+a, a:visited { /*guitar gods on the list */
+    color: rgba(81, 255, 0, 0.699);
+    text-shadow: 1px 2px 0 #000000;
+}
+a:hover {
+    color: #ff00f2;
+}
+
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 3.0em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+div.clear { /*pushes the footer to stick to the bottom*/
+    clear:both;
+    font-size: 1%;
+}
+
+/*Header*/
+header{
+    padding: 2.5em 0 0.5em; /* TOP / LEFT RIGHT / BOTTOM */
+    margin: 0 0 2.0em;
+    background: #429884 url(img/fractal-2077883_960_720COPY.png);
+    opacity: .6;
+    
+    }
+
+header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 9.2em;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-shadow: 1px 2px 0 hsl(180, 98%, 53%);  
+}
+
+header h2 {
+    font-weight: 350;
+    font-size: 7.8em;
+    color: #F420E6;
+    margin: -0.4em 0 0 1.2em;
+    letter-spacing: -.031em;
+    text-shadow: 1px 2px 0 hsl(180, 98%, 53%);
+}
+/*Nav Bars*/
+nav{
+    color: #000;
+    font-size: 2.2em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0 ;
+    text-shadow: 1px 2px 0 hsl(180, 98%, 53%);
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    color: #000;
+    padding: 1.2em 1.2em 0em;
+}
+nav li a:hover{
+    color: hsl(209, 71%, 45%);
+    background-color:#f36ae1;
+   
+}
+nav#utilityMenu{
+    float: right;
+    margin: -1.5em 0 0 0;
+    padding: 0.35;
+    background-color: #196f97cc;
+    height: 1.33em;
+}
+
+nav#uitilityMenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: middle;
+}
+
+nav#utilityMenu ul li.acctNav a, nav#utilityMenu ul li.acctNav a:visited {
+    color: #f36ae1;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.3em;
+    padding: 0.5em;
+    margin: -0.5em 0 0 0;
+    font-size: 0.85em
+}
+nav#utilityMenu ul li.acctNav a.active {
+    background-color: hsl(340, 71%, 45%);
+    color: #f36ae1;
+}
+nav#utilityMenu ul li.acctNav a:hover {
+    background-color: rgb(33, 144, 196);
+    color: hsl(340, 71%, 45%)
+}
+
+nav#utilityMenu li a, nav#utilityMenu li a:visited { padding: 0;}
+nav#utilityMenu li a:hover {background-color: hsl(340, 71%, 45%);}
+nav#utilityMenu ul li input#search {
+    vertical-align: top;
+    margin: 1 1 0 1.0em;
+}
+nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before{
+    content: "| ";
+    color: rgb(155, 248, 209);
+}
+/*Sidebar Section*/
+section#sidebar {
+    width: 250px;
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #333;
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-left: #ee2ea4 solid 10px;
+    opacity: .6;
+    font: Times;
+   }
+/*Main Section*/
+section #main {
+background-color: rgba(107, 107, 107, 0.274);
+margin: 0em 0em 0.0em;
+padding: 0.5em 0 1.0em .5em;
+display: inline-block;
+border-radius: 1em;
+box-shadow: 1px 1px 5px #777; /* offset-x | offset-y | blur radius | color */
+}
+section div.panel{
+    float: left;
+    position: relative;
+    width: 241px;
+    margin: 1em .5em 1.0em 0.5em;
+    padding: 1.0em;
+    background-color: rgba(58, 58, 58, 0.418);
+    border: rgb(0, 0, 0) solid 6px;
+    border-radius: 1.6em;
+}
+section div.panel img.guitarType {
+    width: 100%;
+}
+/*Footer*/
+footer {
+    background-color: hsla(199, 100%, 60%, 0.377);
+    height: 25px;
+    font-size: 1.2em;
+    color: rgb(247, 184, 184);
+    width: 100%;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+
+footer ul li::before { /*spreads it out, places | between options */
+    content: "| ";
+    padding-right: 0.7em;
+}
+
+footer a, footer a:visited { /*changes color of footer "sitemap/privacy/terms of use ONLY*/
+    text-decoration: none;
+}
+
+footer a:hover { /*changes color of 3 middle when hovered over*/
+    color: #e0ff31;
+    text-decoration: underline;
+}
+
+button {
+    color: #38C9FE;
+    background-color: #ff00f2;
+    display: inline-block;
+    margin: 0 0.75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-style: italic
+}
+button:hover {
+    background-color: #e0ff31;
+    border: 1px solid salmon;
+}
